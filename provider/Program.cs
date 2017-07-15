@@ -16,6 +16,7 @@ namespace provider
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
+                .UseUrls("http://localhost:3003")
                 .UseStartup<Startup>()
                 .Build();
 
